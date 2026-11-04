@@ -1,49 +1,82 @@
-## 🍴 Fork & Setup
+# 🎵 musiccc
 
-Want to run your own instance of musiccc? Follow these steps!
+**Your server, your music.**
 
-1. **Fork** this repository to your GitHub account.
-2. Clone your fork:
+musiccc is an open-source Discord music bot built with Python and discord.py.
 
-   ```bash
-   git clone YOUR_FORK_URL
-   cd musiccc
-   ```
+Created by **RevertedTinz**.
 
-3. Install the required dependencies:
+## ✨ Features
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+- 🎶 Music playback
+- ⏯️ Pause and resume
+- ⏭️ Skip tracks
+- 📃 Music queue
+- 🔁 Loop support
+- 🔊 Volume control
+- 🎧 Voice channel support
+- ⚡ Simple prefix commands
 
-4. Create a `.env` file in the root folder.
+## 🤖 Commands
 
-5. Add your own API keys and credentials:
-
-   ```env
-   DISCORD_TOKEN=your_discord_bot_token
-   SPOTIFY_CLIENT_ID=your_spotify_client_id
-   SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
-   ```
-
-6. Start the bot:
-
-   ```bash
-   python main.py
-   ```
-
-### 🔑 Required API Keys
-
-Each user must provide their own credentials.
-
-| API | Where to get it |
+| Command | Description |
 |---|---|
-| Discord Bot Token | [Discord Developer Portal](https://discord.com/developers/applications) |
-| Spotify Client ID | [Spotify Developer Dashboard](https://developer.spotify.com/dashboard) |
-| Spotify Client Secret | [Spotify Developer Dashboard](https://developer.spotify.com/dashboard) |
+| `.play` | Play music |
+| `.pause` | Pause playback |
+| `.resume` | Resume playback |
+| `.skip` | Skip current track |
+| `.stop` | Stop playback |
+| `.queue` | View music queue |
+| `.nowplaying` | Show current track |
+| `.join` | Join voice channel |
+| `.leave` | Leave voice channel |
+| `.help` | Show all commands |
+| `.ping` | Check bot latency |
 
-**Important:**
-- Never share your API keys or bot token.
-- Never commit your `.env` file.
-- Each fork must use its own credentials.
-- Do not use the original developer's API keys.
+## 🚀 Installation
+
+1. Fork this repository.
+2. Clone your fork.
+3. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Copy `.env.example` to `.env`.
+5. Add your own API credentials.
+6. Run the bot:
+
+```bash
+python main.py
+```
+
+## 🔑 Required API Credentials
+
+Each fork must use its own credentials.
+
+- Discord Bot Token: [Discord Developer Portal](https://discord.com/developers/applications)
+- Spotify Client ID: [Spotify Developer Dashboard](https://developer.spotify.com/dashboard)
+- Spotify Client Secret: [Spotify Developer Dashboard](https://developer.spotify.com/dashboard)
+
+## ⚠️ Important
+
+- Never share your API keys.
+- Never upload your `.env` file.
+- Each user must provide their own credentials.
+- FFmpeg must be installed for voice playback.
+
+## 🛠️ Built With
+
+- Python
+- discord.py
+- yt-dlp
+- FFmpeg
+
+## 👨‍💻 Creator
+
+**RevertedTinz**
+
+## 📜 License
+
+MIT License (to be added).
